@@ -208,7 +208,7 @@ const SSVMHighSchool = () => {
             <div className="logo">
               <div className="logo-img">SSVM</div>
               <div className="logo-text">
-                <h1>SSVM High School</h1>
+                <h1>Ssvm High School</h1>
                 <p>Excellence in Education</p>
               </div>
             </div>
