@@ -230,8 +230,8 @@ const SSVMHighSchool = () => {
                 <div className="logo-fallback">SSVM</div>
               </div>
               <div className="logo-text">
-                <h1>SSVM High School</h1>
-                <p>Excellence in Education Since 1985</p>
+                <h1>SSVM</h1>
+                <p>Excellence in Education </p>
               </div>
             </div>
             
