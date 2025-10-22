@@ -42,6 +42,18 @@ const SSVMHighSchool = () => {
     ? galleryImages 
     : galleryImages.filter(img => img.category === galleryFilter);
 
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (mobileMenuOpen && !event.target.closest('nav') && !event.target.closest('.mobile-menu')) {
+        setMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [mobileMenuOpen]);
+
   // Handle scroll for back to top button and active nav
   useEffect(() => {
     const handleScroll = () => {
@@ -206,16 +218,61 @@ const SSVMHighSchool = () => {
         <div className="main-header">
           <div className="container">
             <div className="logo">
-              <div className="logo-img">SSVM</div>
+              <div className="logo-img">
+                <img 
+                  src="https://tse3.mm.bing.net/th/id/OIP.K7HzUKAyojywGypEKWOd6gAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                  alt="SSVM High School Logo" 
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="logo-fallback">SSVM</div>
+              </div>
               <div className="logo-text">
-                <h1>Ssvm High School</h1>
-                <p>Excellence in Education</p>
+                <h1>SSVM High School</h1>
+                <p>Excellence in Education Since 1985</p>
               </div>
             </div>
+            
+            {/* Mobile Menu Button */}
             <div className="mobile-menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-              <i className={`fas ${mobileMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+              <div className={`menu-icon ${mobileMenuOpen ? 'open' : ''}`}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
+
+            {/* Navigation */}
             <nav className={mobileMenuOpen ? 'nav-active' : ''}>
+              {/* Mobile Menu Header */}
+              <div className="mobile-nav-header">
+                <div className="mobile-logo">
+                  <div className="logo-img">
+                    <img 
+                      src="https://tse3.mm.bing.net/th/id/OIP.K7HzUKAyojywGypEKWOd6gAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                      alt="SSVM High School Logo"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="logo-fallback">SSVM</div>
+                  </div>
+                  <div className="logo-text">
+                    <h3>SSVM High School</h3>
+                  </div>
+                </div>
+                <button 
+                  className="mobile-close"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <i className="fas fa-times"></i>
+                </button>
+              </div>
+
+              {/* Navigation Links */}
               <ul>
                 <li>
                   <a 
@@ -223,6 +280,7 @@ const SSVMHighSchool = () => {
                     className={activeNav === 'home' ? 'active' : ''}
                     onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
                   >
+                    <i className="fas fa-home"></i>
                     Home
                   </a>
                 </li>
@@ -232,6 +290,7 @@ const SSVMHighSchool = () => {
                     className={activeNav === 'about' ? 'active' : ''}
                     onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
                   >
+                    <i className="fas fa-info-circle"></i>
                     About
                   </a>
                 </li>
@@ -241,6 +300,7 @@ const SSVMHighSchool = () => {
                     className={activeNav === 'academics' ? 'active' : ''}
                     onClick={(e) => { e.preventDefault(); scrollToSection('academics'); }}
                   >
+                    <i className="fas fa-graduation-cap"></i>
                     Academics
                   </a>
                 </li>
@@ -250,6 +310,7 @@ const SSVMHighSchool = () => {
                     className={activeNav === 'gallery' ? 'active' : ''}
                     onClick={(e) => { e.preventDefault(); scrollToSection('gallery'); }}
                   >
+                    <i className="fas fa-images"></i>
                     Gallery
                   </a>
                 </li>
@@ -259,6 +320,7 @@ const SSVMHighSchool = () => {
                     className={activeNav === 'admissions' ? 'active' : ''}
                     onClick={(e) => { e.preventDefault(); scrollToSection('admissions'); }}
                   >
+                    <i className="fas fa-user-plus"></i>
                     Admissions
                   </a>
                 </li>
@@ -268,16 +330,49 @@ const SSVMHighSchool = () => {
                     className={activeNav === 'contact' ? 'active' : ''}
                     onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
                   >
+                    <i className="fas fa-phone"></i>
                     Contact
                   </a>
                 </li>
               </ul>
+
+              {/* Mobile Contact Info */}
+              <div className="mobile-contact-info">
+                <div className="contact-item">
+                  <i className="fas fa-phone"></i>
+                  <span>+91 1234567890</span>
+                </div>
+                <div className="contact-item">
+                  <i className="fas fa-envelope"></i>
+                  <span>info@ssvmschool.edu</span>
+                </div>
+                <div className="contact-item">
+                  <i className="fas fa-map-marker-alt"></i>
+                  <span>123 Education Street, Knowledge City</span>
+                </div>
+              </div>
+
+              {/* Mobile Social Links */}
+              <div className="mobile-social-links">
+                <a href="#"><i className="fab fa-facebook-f"></i></a>
+                <a href="#"><i className="fab fa-twitter"></i></a>
+                <a href="#"><i className="fab fa-instagram"></i></a>
+                <a href="#"><i className="fab fa-youtube"></i></a>
+              </div>
             </nav>
+
+            {/* Mobile Menu Overlay */}
+            {mobileMenuOpen && (
+              <div 
+                className="mobile-overlay"
+                onClick={() => setMobileMenuOpen(false)}
+              ></div>
+            )}
           </div>
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Rest of your components remain exactly the same */}
       <section className="hero" id="home">
         <div className="hero-content container">
           <h2>Welcome to SSVM High School</h2>
