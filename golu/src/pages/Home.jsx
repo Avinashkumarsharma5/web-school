@@ -231,7 +231,7 @@ const SSVMHighSchool = () => {
               </div>
               <div className="logo-text">
                 <h1>SSVM</h1>
-                <p>Excellence in Education </p>
+                <p>Excellence in Education. </p>
               </div>
             </div>
             
