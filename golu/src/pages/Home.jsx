@@ -372,7 +372,7 @@ const SSVMHighSchool = () => {
         </div>
       </header>
 
-      {/* Rest of your components remain exactly the same */}
+      {/* Hero Section */}
       <section className="hero" id="home">
         <div className="hero-content container">
           <h2>Welcome to SSVM High School</h2>
