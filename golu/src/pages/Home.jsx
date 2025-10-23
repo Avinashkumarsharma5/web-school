@@ -188,10 +188,10 @@ const SSVMHighSchool = () => {
           <div className="ticker-label">Latest News</div>
           <div className="ticker-content">
             <ul className="ticker-list">
-              <li>Admissions open for Academic Year 2024-25 | Apply now!</li>
-              <li>Annual Sports Day scheduled for March 15, 2024</li>
+              <li>Admissions open for Academic Year 2025-26 | Apply now!</li>
+              <li>Annual Sports Day scheduled for March 15, 2026</li>
               <li>SSVM students win 3 gold medals at State Science Olympiad</li>
-              <li>Parent-Teacher meeting on February 28, 2024</li>
+              <li>Parent-Teacher meeting on February 28, 2026</li>
             </ul>
           </div>
         </div>
@@ -231,7 +231,7 @@ const SSVMHighSchool = () => {
               </div>
               <div className="logo-text">
                 <h1>SSVM</h1>
-                <p>Excellence in Education. </p>
+                <p>सरस्वती शिशु विद्या मन्दिर </p>
               </div>
             </div>
             
@@ -261,7 +261,7 @@ const SSVMHighSchool = () => {
                     <div className="logo-fallback">SSVM</div>
                   </div>
                   <div className="logo-text">
-                    <h3>SSVM High School</h3>
+                    <h3>सरस्वती शिशु विद्या मन्दिर</h3>
                   </div>
                 </div>
                 <button 
@@ -348,7 +348,7 @@ const SSVMHighSchool = () => {
                 </div>
                 <div className="contact-item">
                   <i className="fas fa-map-marker-alt"></i>
-                  <span>123 Education Street, Knowledge City</span>
+                  <span>hafuwa  chatra  jharkhand</span>
                 </div>
               </div>
 
@@ -376,7 +376,8 @@ const SSVMHighSchool = () => {
       <section className="hero" id="home">
         <div className="hero-content container">
           <h2>Welcome to SSVM High School</h2>
-          <p>Nurturing young minds for a brighter future through quality education, innovation, and excellence</p>
+          <p>Saraswati Shishu Vidya Mandir is dedicated to nurturing young minds through a perfect blend of modern education and traditional Indian values.
+              We aim to build students who are knowledgeable, disciplined, and rooted in culture, ready to lead with confidence and compassion.</p>
           <div className="btn-group">
             <button className="btn btn-primary" onClick={() => scrollToSection('admissions')}>Apply Now</button>
             <button className="btn btn-secondary" onClick={() => scrollToSection('about')}>Learn More</button>
