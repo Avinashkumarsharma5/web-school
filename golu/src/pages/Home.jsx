@@ -542,57 +542,80 @@ const SSVMHighSchool = () => {
       </section>
 
       {/* Faculty Section */}
-      <section className="faculty-section">
-        <div className="container">
-          <h2 className="section-title">Our Faculty</h2>
-          <div className="faculty-grid">
-            <div className="faculty-card">
-              <div className="faculty-photo">
-                <img src="https://th.bing.com/th/id/OIP.ACdzJUjFhGz9_Rf-oqbw_AHaE7?w=276&h=184&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Arbind kr singh" />
-              </div>
-              <div className="faculty-content">
-                <h3>Arbind kr singh</h3>
-                <div className="faculty-subject">Sst & Hindi</div>
-                <p>Ms in History with 25+ years of teaching experience</p>
-                <div className="faculty-exp">Experience: 25 years</div>
-              </div>
-            </div>
-            <div className="faculty-card">
-              <div className="faculty-photo">
-                <img src="https://images.unsplash.com/photo-1554126802-9a5d1a58d60c?w=300" alt="Ms. A. Verma" />
-              </div>
-              <div className="faculty-content">
-                <h3>Ms. A. Verma</h3>
-                <div className="faculty-subject">Mathematics</div>
-                <p>M.Sc. in Mathematics with specialization in Algebra</p>
-                <div className="faculty-exp">Experience: 15 years</div>
-              </div>
-            </div>
-            <div className="faculty-card">
-              <div className="faculty-photo">
-                <img src="https://images.unsplash.com/photo-1549227092-2374e2df4488?w=300" alt="Mr. S. Kumar" />
-              </div>
-              <div className="faculty-content">
-                <h3>Mr. S. Kumar</h3>
-                <div className="faculty-subject">Chemistry</div>
-                <p>M.Sc. in Chemistry with research background</p>
-                <div className="faculty-exp">Experience: 18 years</div>
-              </div>
-            </div>
-            <div className="faculty-card">
-              <div className="faculty-photo">
-                <img src="https://images.unsplash.com/photo-1579782527581-22904c0df0d6?w=300" alt="Mrs. P. Singh" />
-              </div>
-              <div className="faculty-content">
-                <h3>Mrs. P. Singh</h3>
-                <div className="faculty-subject">English Literature</div>
-                <p>MA in English with specialization in British Literature</p>
-                <div className="faculty-exp">Experience: 12 years</div>
-              </div>
-            </div>
-          </div>
+<section className="faculty-section">
+  <div className="container">
+    <h2 className="section-title">Our Faculty</h2>
+    
+    <div className="faculty-grid" id="facultyScroll">
+      <div className="faculty-card">
+        <div className="faculty-photo">
+          <img src="https://th.bing.com/th/id/OIP.ACdzJUjFhGz9_Rf-oqbw_AHaE7?w=276&h=184&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Arbind kr singh" />
         </div>
-      </section>
+        <div className="faculty-content">
+          <h3>Arbind kr singh</h3>
+          <div className="faculty-subject">Sst & Hindi</div>
+          <p>Ms in History with 25+ years of teaching experience</p>
+          <div className="faculty-exp">Experience: 25 years</div>
+        </div>
+      </div>
+      <div className="faculty-card">
+        <div className="faculty-photo">
+          <img src="https://images.unsplash.com/photo-1554126802-9a5d1a58d60c?w=300" alt="Ms. A. Verma" />
+        </div>
+        <div className="faculty-content">
+          <h3>Ms. A. Verma</h3>
+          <div className="faculty-subject">Mathematics</div>
+          <p>M.Sc. in Mathematics with specialization in Algebra</p>
+          <div className="faculty-exp">Experience: 15 years</div>
+        </div>
+      </div>
+      <div className="faculty-card">
+        <div className="faculty-photo">
+          <img src="https://images.unsplash.com/photo-1549227092-2374e2df4488?w=300" alt="Mr. S. Kumar" />
+        </div>
+        <div className="faculty-content">
+          <h3>Mr. S. Kumar</h3>
+          <div className="faculty-subject">Chemistry</div>
+          <p>M.Sc. in Chemistry with research background</p>
+          <div className="faculty-exp">Experience: 18 years</div>
+        </div>
+      </div>
+      <div className="faculty-card">
+        <div className="faculty-photo">
+          <img src="https://images.unsplash.com/photo-1579782527581-22904c0df0d6?w=300" alt="Mrs. P. Singh" />
+        </div>
+        <div className="faculty-content">
+          <h3>Mrs. P. Singh</h3>
+          <div className="faculty-subject">English Literature</div>
+          <p>MA in English with specialization in British Literature</p>
+          <div className="faculty-exp">Experience: 12 years</div>
+        </div>
+      </div>
+      {/* Add more faculty cards as needed */}
+    </div>
+    
+    <div className="faculty-scroll-nav">
+      <button 
+        className="scroll-nav-btn" 
+        onClick={() => {
+          const facultyGrid = document.getElementById('facultyScroll');
+          facultyGrid.scrollBy({ left: -300, behavior: 'smooth' });
+        }}
+      >
+        &lt;
+      </button>
+      <button 
+        className="scroll-nav-btn" 
+        onClick={() => {
+          const facultyGrid = document.getElementById('facultyScroll');
+          facultyGrid.scrollBy({ left: 300, behavior: 'smooth' });
+        }}
+      >
+        &gt;
+      </button>
+    </div>
+  </div>
+</section>
 
       {/* Academics Section */}
       <section className="section academics-section" id="academics">
