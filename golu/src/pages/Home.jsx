@@ -395,9 +395,15 @@ const SSVMHighSchool = () => {
             </div>
             <div className="message-content">
               <h3>Shaping Future Leaders</h3>
-              <p>At SSVM High School, we believe in nurturing not just academic excellence but also character, creativity, and critical thinking. Our dedicated faculty and state-of-the-art facilities provide an environment where every student can discover their potential and excel.</p>
-              <p>We focus on holistic development, ensuring our students are prepared not just for exams, but for life. Our curriculum blends traditional values with modern teaching methodologies to create well-rounded individuals ready to face the challenges of the 21st century.</p>
-              <p className="principal-signature">- Dr. R. Sharma, Principal</p>
+              <p>Saraswati Shishu Vidya Mandir (SSVM) is more than just a school — it is a center of values, learning, and character-building.
+                 Founded with the vision of providing holistic education, SSVM strives to blend the richness of Indian culture and moral values with the demands of modern knowledge and technology.</p>
+
+              <p>We take pride in being a part of the Vidya Bharati Akhil Bharatiya Shiksha Sansthan tradition, where education is seen as a sacred mission to shape responsible and self-reliant citizens who will contribute positively to the nation.</p>
+
+              <p> <strong>Our Motto:</strong> “Sanskār, Shiksha aur Sanskr̥iti – The Three Pillars of True Education.” <br />
+                 <strong>Our Vision:</strong> To develop children into enlightened individuals who embody knowledge, humility, and compassion.  <br />
+                 <strong>Our Mission:</strong>  To provide value-based education that builds strong character, fosters national pride, and prepares students to face the challenges of the modern world.</p>
+              <p className="principal-signature">- Abhay Narayan Singh</p>
             </div>
           </div>
         </div>
@@ -413,7 +419,7 @@ const SSVMHighSchool = () => {
                 <i className="fas fa-chalkboard-teacher"></i>
               </div>
               <h3>Expert Faculty</h3>
-              <p>Highly qualified and experienced teachers dedicated to student success</p>
+              <p>Our dedicated and experienced teachers guide every student with care, combining modern teaching and traditional values to shape confident, disciplined, and responsible individuals.</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">
@@ -427,14 +433,14 @@ const SSVMHighSchool = () => {
                 <i className="fas fa-trophy"></i>
               </div>
               <h3>Sports Excellence</h3>
-              <p>Comprehensive sports programs to develop physical fitness and teamwork</p>
+              <p>At SSVM, we believe sports build team spirit, discipline, and confidence. Our students actively participate in various games, promoting a healthy body and a sharp mind.</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">
                 <i className="fas fa-book-reader"></i>
               </div>
               <h3>Rich Library</h3>
-              <p>Extensive collection of books and digital resources for research</p>
+              <p>Our well-stocked library offers a wide range of books, journals, and study materials, inspiring students to read, explore, and learn beyond the classroom.</p>
             </div>
           </div>
         </div>
@@ -542,12 +548,12 @@ const SSVMHighSchool = () => {
           <div className="faculty-grid">
             <div className="faculty-card">
               <div className="faculty-photo">
-                <img src="https://images.unsplash.com/photo-1552058544-f2b084c82c39?w=300" alt="Dr. R. Sharma" />
+                <img src="https://th.bing.com/th/id/OIP.ACdzJUjFhGz9_Rf-oqbw_AHaE7?w=276&h=184&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3" alt="Arbind kr singh" />
               </div>
               <div className="faculty-content">
-                <h3>Dr. R. Sharma</h3>
-                <div className="faculty-subject">Principal & Physics</div>
-                <p>PhD in Physics with 25+ years of teaching experience</p>
+                <h3>Arbind kr singh</h3>
+                <div className="faculty-subject">Sst & Hindi</div>
+                <p>Ms in History with 25+ years of teaching experience</p>
                 <div className="faculty-exp">Experience: 25 years</div>
               </div>
             </div>
