@@ -1004,14 +1004,14 @@ const SSVMHighSchool = () => {
                 <i className="fas fa-map-marker-alt"></i>
               </div>
               <h3>Address</h3>
-              <p>hafuwa<br />chatra, KC 12345</p>
+              <p>hafuwa(825401)<br />chatra, jharkhand</p>
             </div>
             <div className="contact-card">
               <div className="contact-icon">
                 <i className="fas fa-phone"></i>
               </div>
               <h3>Phone</h3>
-              <p>+91 1234567890<br />+91 9876543210</p>
+              <p>+91 <br />+91 </p>
             </div>
             <div className="contact-card">
               <div className="contact-icon">
