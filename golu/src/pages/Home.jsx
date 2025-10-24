@@ -3,7 +3,7 @@ import schoolImg from "../assets/school-img.png";
 import campusImg from "../assets/image.png";
 import labImg from "../assets/lab.png";
 import laboImg from "../assets/labo.png";
-
+import labiraryImg from "../assets/labirary.png";
 
 import './Home.css';
 
@@ -37,7 +37,7 @@ const SSVMHighSchool = () => {
   const galleryImages = [
     { src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600", category: "classroom", title: "Modern Classrooms" },
     { src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600", category: "sports", title: "Sports Activities" },
-    { src: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600", category: "classroom", title: "Library" },
+    { src: labiraryImg, category: "classroom", title: "Library" },
     { src: laboImg, category: "classroom", title: "Science Lab" },
     { src: labImg, category: "events", title: "Annual Events" },
     { src: campusImg, category: "campus", title: "Campus View" }
