@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import schoolImg from "../assets/school-img.png";
+import campusImg from "../assets/image.png";
+
 
 import './Home.css';
 
@@ -36,7 +38,9 @@ const SSVMHighSchool = () => {
     { src: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600", category: "classroom", title: "Library" },
     { src: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=600", category: "classroom", title: "Science Lab" },
     { src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600", category: "events", title: "Annual Events" },
-    { src: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600", category: "campus", title: "Campus View" }
+    { src: campusImg, category: "campus", title: "Campus View" }
+
+
   ];
 
   // Filtered gallery images
