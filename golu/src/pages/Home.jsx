@@ -1025,7 +1025,7 @@ const SSVMHighSchool = () => {
                 <i className="fas fa-clock"></i>
               </div>
               <h3>Office Hours</h3>
-              <p>Monday - Friday: 8:00 AM - 4:00 PM<br />Saturday: 9:00 AM - 1:00 PM</p>
+              <p>Monday - Friday: 8:00 AM - 4:00 PM<br />Saturday: 9:00 AM - 1:30 PM</p>
             </div>
           </div>
           
